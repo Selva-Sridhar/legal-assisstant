@@ -5,7 +5,7 @@ import speech_recognition as sr
 from utils import search_cases
 
 # Get absolute path of the current directory
-BASE_DIR = os.path.dirname(os.path.abspath(_file_))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Load legal case data with absolute paths
 def load_cases():

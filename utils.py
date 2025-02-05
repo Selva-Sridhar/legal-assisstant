@@ -8,7 +8,7 @@ def search_cases(query, civil_cases, criminal_cases, family_cases):
         return [case for case in case_list if any(word in case.lower() for word in query_words)]
 
     return {
-        "Civil": match_cases(civil_cases),
-        "Criminal": match_cases(criminal_cases),
-        "Family": match_cases(family_cases),
+        "civil": match_cases(civil_cases),
+        "criminal": match_cases(criminal_cases),
+        "family": match_cases(family_cases),
     }
